@@ -18,50 +18,47 @@
 }
 
 /* List items inside navigation bar */
-.navbar li {
+.navbar ul li {
   display: inline;
   margin: 0 1em;
 }
 
 /* Anchor tags inside list items */
-.navbar li a {
+.navbar ul li a {
   color: #fff;
   
 }
 /* Add padding-top to main content so it sits below the fixed navbar */
-main {
+.main-content{
   padding-top: 5em;
 }
 
 /* Style each section within main */
-main section {
+.section {
   padding: 2em 1em;
   text-align: center;
 }
 
 /* Home / Welcome Section Specific Styles */
-#welcome-section h1 {
+#home h1 {
   font-size: 2.5em;
   margin-bottom: 0.5em;
 }
 
-#welcome-section p {
+#home p {
   font-size: 1.2em;
   color: #666;
 }
 
 /* Flexbox layout for the portfolio container */
-#projects,
-.projects-grid,
 .portfolio-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 1em;
 }
+
 /* Style each portfolio item */
-.project-tile,
-.project-card,
 .portfolio-item {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -74,39 +71,24 @@ main section {
 }
 
 /* Style the headings within the portfolio items */
-.project-tile h2,
-.project-tile h3,
-.project-card h2,
-.project-card h3,
-.portfolio-item h2,
-.portfolio-item h3,
-#projects h2,
-#projects h3 {
+.portfolio-item h3 {
   font-weight: bold;
   margin-bottom: 0.5em;
 }
 
 /* Paragraphs within portfolio items */
-#projects p,
-.project-tile p,
-.project-card p {
+.portfolio p {
   margin-bottom: 0.5em;
   color: #666;
 }
 /* Style the images within the portfolio items */
-#projects img,
-.project-tile img,
-.project-card img,
 .portfolio-item img {
   width: 100%;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Apply a scaling transformation to portfolio items on hover */
-.project-tile:hover,
-.project-card:hover,
-.portfolio-item:hover,
-#projects article:hover {
+.portfolio-item:hover {
   transform: scale(1.05);
 }
 
